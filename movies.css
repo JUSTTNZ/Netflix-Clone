@@ -1,0 +1,313 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "Netflix";
+  src: url("fonts/NetflixSansBlack.ttf") format("ttf"),
+    url("fonts/NetflixSansBold.ttf") format("ttf"),
+    url("fonts/NetflixSansIcon.ttf") format("ttf"),
+    url("fonts/NetflixSansLight.ttf") format("ttf"),
+    url("fonts/NetflixSansMedium.ttf") format("ttf"),
+    url("fonts/NetflixSansRegular.ttf") format("ttf"),
+    url("fonts/NetflixSansThin.ttf") format("ttf");
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Netflix", sans-serif;
+  background-color: #000000;
+}
+
+.container {
+  background-color: #000000;
+}
+header {
+  width: 100%;
+  height: 60px;
+}
+nav {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .links {
+  width: 600px;
+  height: 100%;
+  display: flex;
+  gap: 10px;
+  justify-content: space-evenly;
+  align-items: center;
+  background: #000000;
+}
+.logo img {
+  height: 60px;
+}
+nav .links a {
+  text-decoration: none;
+  color: white;
+}
+.search {
+  width: 200px;
+  display: flex;
+  gap: 10px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.search a {
+  text-decoration: none;
+  color: white;
+}
+.search-pic {
+  width: 20px;
+  height: 20px;
+}
+.gift {
+  width: 20px;
+  height: 20px;
+}
+.bell {
+  width: 20px;
+  height: 20px;
+}
+.bird {
+  width: 20px;
+  height: 20px;
+}
+.arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.hero {
+  background-image: url("images/hero-img.png");
+  width: 100%;
+  height: 760px;
+  position: relative;
+  top: -30px;
+}
+.movieName {
+  position: relative;
+  top: 160px;
+  left: 40px;
+  width: 300px;
+  margin: 50px;
+}
+.movieName img {
+  width: 300px;
+}
+.topRating {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 600px;
+}
+.topRating .top {
+  background-color: red;
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 15px;
+}
+.topRating .number {
+  width: 600px;
+  margin-left: 2px;
+  font-size: 25px;
+}
+.write-up {
+  width: 400px;
+  margin: 15px;
+  color: white;
+}
+.write-up p {
+  line-height: 25px;
+}
+.player {
+  position: relative;
+  top: 140px;
+  left: 100px;
+  width: 700px;
+  display: flex;
+  gap: 10px;
+}
+.player a {
+  width: 100px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: white;
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.player a:nth-child(2) {
+  background-color: rgb(255, 255, 255, 0.4);
+  width: 200px;
+}
+.play {
+  margin-right: 10px;
+}
+.info {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+.popular {
+  position: relative;
+  top: 190px;
+  left: 100px;
+  width: 90%;
+}
+.popular p {
+  color: white;
+  font-size: 18px;
+}
+.slider {
+  display: flex;
+  gap: 2px;
+  position: relative;
+  top: 205px;
+  left: 100px;
+  width: 90%;
+}
+.images img {
+  width: 240px;
+  height: 150px;
+}
+.movieCards {
+  position: relative;
+  top: 0px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  margin: 10px 0;
+}
+.movieCards p {
+  position: relative;
+  left: 100px;
+  color: white;
+  margin: 10px 0;
+}
+.card {
+  display: flex;
+  gap: 2px;
+  position: relative;
+  top: 0px;
+  left: 100px;
+  width: 90%;
+}
+.movieCards-long {
+  position: relative;
+  top: 0px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  margin: 10px 0;
+}
+.movieCards-long p {
+  position: relative;
+  left: 100px;
+  color: white;
+  margin: 10px 0;
+}
+.movieCards-long .card {
+  display: flex;
+  gap: 2px;
+  position: relative;
+  top: 0px;
+  left: 100px;
+  width: 90%;
+}
+.movieCards-long .card .images img {
+  height: 400px;
+}
+.movieCards-two {
+  position: relative;
+  top: 0px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  margin: 10px 0;
+}
+.movieCards-two p {
+  position: relative;
+  left: 100px;
+  color: white;
+  margin: 10px 0;
+}
+.movieCards-two .card {
+  display: flex;
+  gap: 2px;
+  position: relative;
+  top: 0px;
+  left: 100px;
+  width: 90%;
+}
+.movieCards-two .card .images img {
+  width: 120px;
+}
+.movieCards-two .card .images {
+  /* width: 240px;
+    height: 150px; */
+  display: flex;
+}
+.layer6 {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  background: #000000;
+  padding: 50px 250px;
+  gap: 30px;
+}
+.layer6 h1 {
+  opacity: 0.3;
+}
+.footer-links {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+.link1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 20px;
+}
+.link1 a {
+  color: white;
+  text-decoration: none;
+  opacity: 0.3;
+}
+.link1 a:hover {
+  opacity: 1;
+}
+
+.language button {
+  color: white;
+  background-color: rgb(0, 0, 0, 0.6);
+  border: 1px solid white;
+  padding: 10px 12px;
+  border-radius: 5px;
+  opacity: 0.3;
+  margin-bottom: 50px;
+}
+.language button:hover {
+  opacity: 1;
+}
+.language p {
+  opacity: 0.3;
+}

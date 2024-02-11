@@ -1,0 +1,238 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Netflix";
+  src: url("fonts/NetflixSansBlack.ttf") format("ttf"),
+    url("fonts/NetflixSansBold.ttf") format("ttf"),
+    url("fonts/NetflixSansIcon.ttf") format("ttf"),
+    url("fonts/NetflixSansLight.ttf") format("ttf"),
+    url("fonts/NetflixSansMedium.ttf") format("ttf"),
+    url("fonts/NetflixSansRegular.ttf") format("ttf"),
+    url("fonts/NetflixSansThin.ttf") format("ttf");
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Netflix", sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 1050px;
+  background-image: url(images/image1.png);
+  z-index: 1;
+}
+.overlay {
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  background-color: rgb(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+}
+.logo img {
+  height: 60px;
+}
+
+.hero {
+  width: 400px;
+  height: 550px;
+  background: rgb(0, 0, 0, 0.7);
+  color: white;
+  padding: 40px;
+}
+.hero h1 {
+  padding: 0 10px;
+}
+.login-form {
+  margin: 30px 0;
+}
+
+.inputed {
+  width: 300px;
+  height: 50px;
+  padding: 10px;
+  margin: 7px;
+  border: none;
+  outline: none;
+  color: white;
+  background: #303030;
+  border-radius: 4px;
+}
+.inputed:focus {
+  border: 1px solid white;
+}
+.inputed1 {
+  width: 300px;
+  height: 50px;
+  padding: 10px;
+  margin: 7px;
+  border: none;
+  outline: none;
+  color: white;
+  background: red;
+  border-radius: 4px;
+}
+.rem {
+  display: flex;
+  gap: 5px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  padding-right: 15px;
+  opacity: 0.7;
+}
+.rem a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+.remember {
+  display: flex;
+  gap: 5px;
+  font-size: 14px;
+}
+.facebook {
+  margin: 30px 0;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.facebook .face {
+  width: 20px;
+  height: 20px;
+  opacity: 1;
+}
+.facebook .anchor {
+  color: white;
+  text-decoration: none;
+  opacity: 0.4;
+}
+.sign-up {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.sign-up p {
+  opacity: 0.4;
+}
+.sign-up a {
+  color: white;
+  text-decoration: none;
+}
+.sign-up a:hover {
+  text-decoration: underline;
+}
+.google p {
+  display: inline-block;
+  width: 320px;
+  font-size: 14px;
+  opacity: 0.4;
+}
+.google .learn {
+  opacity: 1;
+  font-size: 14px;
+  text-decoration: none;
+  color: blue;
+  position: relative;
+  top: -18px;
+  left: 150px;
+}
+
+footer {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 100px;
+  padding: 50px 250px;
+  gap: 30px;
+  background: rgb(0, 0, 0, 0.8);
+}
+.layer h1 {
+  color: white;
+  font-size: 30px;
+  opacity: 0.3;
+}
+.footer-links {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+.link1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 20px;
+}
+.link1 a {
+  color: white;
+  text-decoration: none;
+  opacity: 0.3;
+}
+.link1 a:hover {
+  opacity: 1;
+}
+.language button {
+  color: white;
+  background-color: rgb(0, 0, 0, 0.6);
+  border: 1px solid white;
+  padding: 10px 12px;
+  border-radius: 5px;
+  opacity: 0.3;
+  margin-bottom: 20px;
+}
+.language button:hover {
+  opacity: 1;
+}
+
+@media screen and (max-width: 550px) {
+  footer {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 100px;
+    padding: 20px;
+    gap: 30px;
+    background: rgb(0, 0, 0, 0.8);
+  }
+  .layer h1 {
+    color: white;
+    font-size: 20px;
+    opacity: 0.3;
+  }
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+  }
+  .link1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  .language button {
+    margin-bottom: 10px;
+  }
+}

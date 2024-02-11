@@ -1,0 +1,121 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "Netflix";
+  src: url("fonts/NetflixSansBlack.ttf") format("ttf"),
+    url("fonts/NetflixSansBold.ttf") format("ttf"),
+    url("fonts/NetflixSansIcon.ttf") format("ttf"),
+    url("fonts/NetflixSansLight.ttf") format("ttf"),
+    url("fonts/NetflixSansMedium.ttf") format("ttf"),
+    url("fonts/NetflixSansRegular.ttf") format("ttf"),
+    url("fonts/NetflixSansThin.ttf") format("ttf");
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Netflix", sans-serif;
+}
+.container {
+  background-color: #000000;
+  height: 100vh;
+}
+header img {
+  height: 60px;
+}
+section {
+  position: relative;
+  top: 50px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+section h1 {
+  color: white;
+}
+.profile {
+  width: 70%;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-around;
+}
+.user {
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.user img {
+  height: 200px;
+  width: 200px;
+}
+.user p {
+  color: white;
+  text-align: center;
+  margin: 20px 0;
+  opacity: 0.4;
+}
+.plus {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #999999;
+  position: relative;
+  top: -10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.plus span {
+  height: 7px;
+  width: 60px;
+  border-radius: 20px;
+  background: black;
+}
+.plus span:nth-child(1) {
+  position: relative;
+  top: 5px;
+}
+.plus span:nth-child(2) {
+  transform: rotate(90deg);
+}
+.user .add {
+  position: relative;
+  top: 25px;
+}
+
+.manage {
+  height: 50px;
+  width: 300px;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.4;
+}
+
+@media screen and (max-width: 550px) {
+  .container {
+    padding-bottom: 100px;
+    background-color: #000000;
+    height: auto;
+  }
+  section {
+    flex-wrap: wrap;
+  }
+  .profile {
+    flex-wrap: wrap;
+  }
+}
